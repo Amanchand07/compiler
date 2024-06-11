@@ -6,8 +6,6 @@ char pror[7][10]={"Aa","Bb","Cd","aB","@","Cc","@"};
 char  prod[7][10]={"s-->A","A-->Bb","A-->Cd","B-->aB","B-->@","C-->Cc","C-->@"}; 
 char first[7][10]={"abcd","ab",cd","a@","@","c@","@"}; 
 char follow[7][10]={"$","$","$","a$","b$","c$","d$"}; 
- 
-Dept. of CSE 17  
 char table[5][6][10]; 
 { 
 switch(c) 
@@ -41,8 +39,7 @@ for(i=0;i<7;i++)
 { 
 k=strlen(first[i]); 
 for(j=0;j<10;j++) 
-if(first[i][j]!='@') 
-Dept. of CSE 18  
+if(first[i][j]!='@')  
 strcpy(table[numr(prol[i][0])+1][numr(first[i][j])+1],prod[i]); 
 } 
 for(i=0;i<7;i++) 
