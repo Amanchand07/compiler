@@ -1,0 +1,22 @@
+#include <stdio.h> 
+void mystrcpy(char*,char*); 
+int main() 
+{ 
+    char str[100], str2[100]; 
+    printf("Enter the String: "); 
+    gets(str); 
+    mystrcpy(str2,str); 
+    printf("Copied String: "); 
+    puts(str2); 
+    return 0; 
+} 
+void mystrcpy(char *q, char *p) 
+{ 
+    int i=0; 
+    while(*(p+i)!='\0') 
+    { 
+        *(q+i) = *(p+i); 
+        i=i+1; 
+    } 
+    *(q+i) = '\0'; 
+} 
