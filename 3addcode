@@ -4,7 +4,6 @@
 #include<string.h> 
  
 struct three 
-Dept. of CSE 22  
 { 
 char data[10],temp[7]; 
 }s[30]; 
@@ -46,9 +45,7 @@ strcpy(d1,"");
 strcpy(d2,"t"); 
 j++; 
 } 
-fprintf(f2,"\n%s=%s",s[0].data,s[j-1].temp); 
- 
-Dept. of CSE 23  
+fprintf(f2,"\n%s=%s",s[0].data,s[j-1].temp);   
 fclose(f1); 
 fclose(f2); 
 getch(); 
